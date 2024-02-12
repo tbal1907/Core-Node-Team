@@ -83,7 +83,9 @@ ExecStart=/root/avail-node/data-avail -d /root/avail-node/data --chain goldberg 
 WantedBy=multi-user.target
 EOF
 ```
-
+### Önemli Not 
+https://github.com/availproject/avail/releases burada yazdığına göre 
+******  Node 408009'da (Node update olduktan sonra benim kurulumum da burada takıldı) takılacak büyük ihtimal. Nodu durdurun Son da yazan --reserved-only kısmını silip komutu tekrar çalıştırın.
 ### Nodu başlatalım
 ```
 sudo systemctl daemon-reload
