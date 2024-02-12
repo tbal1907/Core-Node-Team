@@ -56,7 +56,7 @@ tar xvzf x86_64-ubuntu-2004-data-avail.tar.gz
 
 ------------------------
 ### Servis oluşturalım.
-NOT: molla202 yazan kısmı değiştiriniz explorerdeki görünen isminiz...
+NOT: osimato (molla202 yazarıyordu normalde burada ben kendime göre değiştirdim) yazan kısmı değiştiriniz explorerdeki görünen isminiz...
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<'EOF'
 [Unit]
@@ -69,7 +69,7 @@ User=root
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail-node/data-avail -d /root/avail-node/data --chain goldberg --port 30333 --validator --name "molla202" \
+ExecStart=/root/avail-node/data-avail -d /root/avail-node/data --chain goldberg --port 30333 --validator --name "osimato" \
 --reserved-nodes \
 "/dns/bootnode-001.goldberg.avail.tools/tcp/30333/p2p/12D3KooWCVqFvrP3UJ1S338Gb8SHvEQ1xpENLb45Dbynk4hu1XGN" \
 "/dns/bootnode-002.goldberg.avail.tools/tcp/30333/p2p/12D3KooWD6sWeWCG5Z1qhejhkPk9Rob5h75wYmPB6MUoPo7br58m" \
