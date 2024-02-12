@@ -260,6 +260,11 @@ screen -S tx
 go run main.go
 ```
 NOT: screenden cıkmak için ctrl ad girmek için screen -r tx
+Benden ekler :
+1 - Json dosyasını Core-Node-Team'in yazdığı gibi kendi reponuzda oluşturun. Bilgisayarda yapıp update edince sorun veriyor.
+2 - 9615 portunu açmayı unutan kurulumlar gördüm. O port açık değilse node çalışıyor ama github da birleştirme de sorun çıkıyor.
+2 - Buraya arkadaşların sonradan eklediği alıntıyı muhakkak yapın. Onu yapmadan Tx olmuyor. Çoğu yerde testnet kısmında görünecek diye yazıyor. Benim deneyimlediğim kadarı ile Mainnet kısmında tx vs geliyor.
+4 - Go version benim contabo hesabında bir türlü update olmadı. o yüzden hetzner'de yeniden kurmak zorunda kaldım.
 
 
 
