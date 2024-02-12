@@ -267,4 +267,5 @@ NOT: screenden cıkmak için ctrl ad girmek için screen -r tx
 
 *  Go version benim contabo hesabında bir türlü update olmadı. o yüzden hetzner'de yeniden kurmak zorunda kaldım.
 
+<img width="930" alt="image" src="https://github.com/tbal1907/Core-Node-Team/assets/80605583/66b8ec86-b317-4246-9828-d0a6411cfa5a">
 
