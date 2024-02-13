@@ -76,6 +76,31 @@ journalctl -u availd -fo cat
 ```
 curl "http://localhost:7000/v1/latest_block"
 ```
+#### Eklediklerim 
+* Yeni versiyon var. Onu kullan.
+```
+wget https://github.com/availproject/avail-light/releases/download/v1.7.7/avail-light-linux-amd64.tar.gz
+tar -xvzf avail-light-linux-amd64.tar.gz
+mv avail-light-linux-amd64 avail-light
+rm -rf avail-light-linux-amd64.tar.gz
+
+```
+
+* [Burada açıklamalar var.](https://github.com/availproject/avail-light
+* Nodu başlatırken aşağı da olan komutu gir çalışmaya başladıktan sonra Ctrl + C ile nodu durdur.
+```
+./avail-light --network goldberg
+
+```
+* Daha sonra 
+```
+nano identity.toml
+
+```
+* Bu komut ile keylerin olduğu config dosyası açılacak. Kendi keylerin ile değiştir. Kaydet. ve Nodu tekrardan başlat. 
+
+
+
 
 -------------------------------------------
 ## <h1 align="center">Avail Light Node ubuntu 20 kısa yol </h1>
