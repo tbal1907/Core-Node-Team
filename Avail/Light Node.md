@@ -27,6 +27,15 @@ sudo apt-get install make clang pkg-config libssl-dev build-essential
 ```
 screen -S alight
 ```
+Screen contabo da yüklü gelmiyor. yüklemek için
+
+```
+sudo apt install screen
+```
+* Screen -S oturumismi  ==> bu şekil de yeni bir oturum açılır CTRL +A+D ile oturum kapatılmadan ana ekrana geçilir.
+* Screen -xS oturumismi ==> açık olan oturuma tekrardan bağlanılır.
+* screen -ls ==> açık olan oturumların listesi gelir.
+
 
 ### Avail Light Client'i yükleyin
 ```
@@ -77,15 +86,7 @@ sudo systemctl restart availd
 nano identity.toml
 
 ```
-* Bu komut ile  Node Config dosyasına ulaşmış olacaksın. Avail cüzdanı ilk kurduğun da sana verdiği keyler vardı. Onları burada olnalar ile değiştir. Sonra CTRL+X yap. Kaydetmek için Y veya N demeni isteyecek. Y yazıp enterle. Sonra nodu yukarıda ki komut ile başlat. Herşeyi doğru yaptıysan hem logları isterken hem de block isterken sorunsuz çalışması lazım. Screen contabo da yüklü gelmiyor. yüklemek için
-
-```
-sudo apt install screen
-```
-* Screen -S oturumismi  ==> bu şekil de yeni bir oturum açılır CTRL +A+D ile oturum kapatılmadan ana ekrana geçilir.
-* Screen -xS oturumismi ==> açık olan oturuma tekrardan bağlanılır.
-* screen -ls ==> açık olan oturumların listesi gelir.
-
+* Bu komut ile  Node Config dosyasına ulaşmış olacaksın. Avail cüzdanı ilk kurduğun da sana verdiği keyler vardı. Onları burada olnalar ile değiştir. Sonra CTRL+X yap. Kaydetmek için Y veya N demeni isteyecek. Y yazıp enterle. Sonra nodu yukarıda ki komut ile başlat. Herşeyi doğru yaptıysan hem logları isterken hem de block isterken sorunsuz çalışması lazım. 
 
 ## Loglar
 ```
