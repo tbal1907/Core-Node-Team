@@ -31,7 +31,7 @@ screen -S alight
 ### Avail Light Client'i yükleyin
 ```
 cd
-wget https://github.com/availproject/avail-light/releases/download/v1.7.6/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.8/avail-light-linux-amd64.tar.gz
 tar -xvzf avail-light-linux-amd64.tar.gz
 mv avail-light-linux-amd64 avail-light
 rm -rf avail-light-linux-amd64.tar.gz
@@ -63,6 +63,30 @@ systemctl enable availd
 sudo systemctl restart availd
 ```
 
+#################### Eklediklerim ################################
+* 20.02.2024 itibari ile versiyon 1.7.8 olarak yenilendi.
+
+* [Burada açıklamalar var.](https://github.com/availproject/avail-light
+* Nodu başlatırken aşağı da olan komutu gir çalışmaya başladıktan sonra Ctrl + C ile nodu durdur.
+```
+./avail-light --network goldberg
+
+```
+* Daha sonra 
+```
+nano identity.toml
+
+```
+* Bu komut ile  Node Config dosyasına ulaşmış olacaksın. Avail cüzdanı ilk kurduğun da sana verdiği keyler vardı. Onları burada olnalar ile değiştir. Sonra CTRL+X yap. Kaydetmek için Y veya N demeni isteyecek. Y yazıp enterle. Sonra nodu yukarıda ki komut ile başlat. Herşeyi doğru yaptıysan hem logları isterken hem de block isterken sorunsuz çalışması lazım. Screen contabo da yüklü gelmiyor. yüklemek için
+
+```
+sudo apt install screen
+```
+* Screen -S oturumismi  ==> bu şekil de yeni bir oturum açılır CTRL +A+D ile oturum kapatılmadan ana ekrana geçilir.
+* Screen -xS oturumismi ==> açık olan oturuma tekrardan bağlanılır.
+* screen -ls ==> açık olan oturumların listesi gelir.
+
+
 ## Loglar
 ```
 journalctl -u availd -fo cat
@@ -76,29 +100,6 @@ journalctl -u availd -fo cat
 ```
 curl "http://localhost:7000/v1/latest_block"
 ```
-#### Eklediklerim 
-* Yeni versiyon var. Onu kullan.
-```
-wget https://github.com/availproject/avail-light/releases/download/v1.7.7/avail-light-linux-amd64.tar.gz
-tar -xvzf avail-light-linux-amd64.tar.gz
-mv avail-light-linux-amd64 avail-light
-rm -rf avail-light-linux-amd64.tar.gz
-
-```
-
-* [Burada açıklamalar var.](https://github.com/availproject/avail-light
-* Nodu başlatırken aşağı da olan komutu gir çalışmaya başladıktan sonra Ctrl + C ile nodu durdur.
-```
-./avail-light --network goldberg
-
-```
-* Daha sonra 
-```
-nano identity.toml
-
-```
-* Bu komut ile keylerin olduğu config dosyası açılacak. Kendi keylerin ile değiştir. Kaydet. ve Nodu tekrardan başlat. 
-
 
 
 
