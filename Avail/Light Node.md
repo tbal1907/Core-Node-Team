@@ -40,7 +40,7 @@ sudo apt install screen
 ### Avail Light Client'i yükleyin
 ```
 cd
-wget https://github.com/availproject/avail-light/releases/download/v1.7.8/avail-light-linux-amd64.tar.gz
+wget https://github.com/availproject/avail-light/releases/download/v1.7.9/avail-light-linux-amd64.tar.gz
 tar -xvzf avail-light-linux-amd64.tar.gz
 mv avail-light-linux-amd64 avail-light
 rm -rf avail-light-linux-amd64.tar.gz
